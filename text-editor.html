@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1d3f54002d.js" crossorigin="anonymous"></script>
+    <style>
+        
+    </style>
+
+</head>
+<body>
+    <section class="border border-dark bg-primary py-5">
+        <h1 class="text-center">My text Editor</h1>
+        <div class="bg-primary-subtle container p-5">
+            <div class="d-flex justify-content-between ">
+                <div class="d-flex gap-4">
+                    <i onclick="bold()" class="fa-solid fa-bold btn btn-outline-success"></i>
+                    <i onclick="italic()" class="fa-solid fa-italic btn btn-outline-success"></i>
+                    <i onclick="underLine()" class="fa-solid fa-underline btn btn-outline-success"></i>
+                </div>
+                <div class="d-flex gap-4">
+                    <i onclick="textLeft()" class="fa-solid fa-align-left btn btn-outline-success"></i>
+                    <i onclick="textCenter()" class="fa-solid fa-align-center btn btn-outline-success"></i>
+                    <i onclick="textRight()" class="fa-solid fa-align-right btn btn-outline-success"></i>
+                    <i onclick="textJustify()" class="fa-solid fa-align-justify btn btn-outline-success"></i>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <input onchange="number()" type="number" name="" id="number" class="w-25">
+                    <button onclick="upperLower()" class="btn btn-outline-success">aA</button>
+                    <input onchange="color()" type="color" id="favcolor" name="favcolor" value="#ff0000">
+                </div>
+            </div>
+            <hr>
+            <div class="bg-light">
+                <textarea name="" id="textarea" class="w-100 " style="height: 400px;"></textarea>
+            </div>
+        </div>
+    </section>
+    <script src="text-editor.js"></script>
+</body>
+</html>
